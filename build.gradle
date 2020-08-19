@@ -1,0 +1,15 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    apply plugin: "java"
+
+    dependencies {
+        implementation platform("io.servicetalk:servicetalk-bom:0.29.0")
+    }
+}
